@@ -1,0 +1,55 @@
+#tecnologias{
+    text-align: center;
+    padding: var(--sp-section) 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#tecnologias h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* caso a tela seja pequena, quebra a linha */
+    gap: 40px; /* espaçamento entre icones */
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem; /* tamanho do icone */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* cores oficiais */
+span.html   { color: #E34F26; } /* HTML5 laranja */
+span.css        { color: #1572B6; } /* CSS3 azul */
+span.javascript { color: #F7DF1E; } /* JS amarelo */
+span.react      { color: #61DAFB; } /* React azul claro */
+span.nodejs       { color: #339933; } /* Node.js verde */
+span.git        { color: #F05032; } /* Git laranja avermelhado */
+
+.tech-item:hover {
+    transform: scale(1.2);
+}
+
+.tech-item span {
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tech-icons i {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-icons i:hover {
+    transform: scale(1.2); /* aumenta levemente */
+    filter: drop-shadow(0px 0px 6px rgba(0,0,0,0.3)); /* brilho sutil */
+}

@@ -14,8 +14,30 @@ nav {
 }
 
 nav a {
+    position: relative /* necessário para o ::after*/;
     margin: 0 25px;
     text-decoration: none;
     color: var(--clr-light);
     font-weight: bold;
+    transition: color 0.3s ease; /* cor suave */
 }
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* distância abaixo do texto */
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--clr-accent);
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--clr-accent); /* muda a cor do texto */
+}
+
+nav a:hover::after {
+    width: 100%; /* anima o sublinhado */
+}
+
