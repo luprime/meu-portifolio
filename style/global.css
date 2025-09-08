@@ -1,0 +1,33 @@
+:root {
+    /* Fontes */
+    --ff-arial: 'Arial', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
+
+    /* Cores */
+
+    --clr-bg: #f9f9f9;
+    --clr-text: #333;
+    --clr-dark: #111;
+    --clr-light: #fff;
+    --clr-accent: #444;
+
+    /* Espaçamento */
+
+    --sp-section: 40px;
+    --sp-card: 20px;
+
+    /* Bordas */
+    --br-card: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--clr-bg);
+    color: var(--clr-text);
+    font-family: var(--ff-arial);
+}

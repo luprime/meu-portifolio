@@ -1,0 +1,36 @@
+#sobre {
+    padding: var(--sp-section) 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.sobre-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.sobre-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.sobre-texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.sobre-texto h2 {
+    margin-bottom: 15px;
+}
+
+.sobre-texto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
