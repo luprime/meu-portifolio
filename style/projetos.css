@@ -1,0 +1,122 @@
+#projetos {
+    text-align: center;
+    padding: var(--sp-section) 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#projetos h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--clr-light);
+    padding: var(--sp-card);
+    border-radius: var(--br-card);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    /*transform: scale(1.05);*/
+}
+
+/* thumbnail */
+.card img {
+    width: 100%;
+    aspect-ratio: 16/09; /* mantém proporção uniforme*/
+    object-fit: cover; /* recorte elegante */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.3rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+/* botoes lado a lado */
+.card-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    flex: 1; /* mesma largura pros dois */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn:active { transform: scale(0.98);}
+.btn:focus-visible { outline: 2px solid var(--clr-accent); outline-offset: 2px;}
+
+/* ver projeto - destaque */
+.btn-projeto {
+    background: var(--clr-dark);
+    color: #fff;
+    border: 1px solid transparent;
+}
+.btn-projeto:hover {
+    background: #555;
+    border-color: #d1d5db;
+}
+
+/* github - fundo branco, texto preto (com imagem) */
+.btn-github {
+    background: #fff;
+    color: #111;
+    border: 1px solid #e5e7eb;
+}
+.btn-github:hover {
+    background: #f3f4f6;
+    border-color: #d1d5db;
+}
+
+/* icone do github dentro do botao */
+.btn-github i {
+    font-size: 1.2rem;
+    line-height: 0;
+}
+
+.card-buttons a img,
+.card-buttons a svg {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.card-buttons a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}

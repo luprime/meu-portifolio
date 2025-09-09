@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Lucas Menezes</title>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <!-- Estilos -->
     <link rel="stylesheet" href="style/index.css">
 
@@ -19,6 +21,11 @@
             <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
         </nav>
+
+        <button id="theme-toggle" aria-label="Alterar tema">
+            <img src="assets/icons/sun.svg" alt="Light mode" class="icon icon-sun">
+            <img src="assets/icons/moon.svg" alt="Dark mode" class="icon icon-moon">
+        </button>
     </header>
     
     <section id="sobre">
@@ -66,6 +73,56 @@
                 <i class="devicon-git-plain colored"></i>
                 <span class="git">Git</span>
             </div>  
+        </div>
+     </section>
+
+     <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/Cover.jpg" alt="Preview do Projeto 1">
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do projeto.</p>
+                <div class="card-buttons">
+                    <a href="https://luprime.github.io/namoro/" target="_blank" class="btn btn-projeto">Ver Projeto</a>
+                    <a href="https://github.com/luprime/namoro" target="_blank" class="btn btn-github">
+                        <img src="assets/icons/github.svg" alt="">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/Cover.jpg" alt="Preview do Projeto 2">
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto.</p>
+                <div class="card-buttons">
+                    <a href="https://luprime.github.io/nlw-setup/" target="_blank" class="btn btn-projeto">Ver Projeto</a>
+                    <a href="https://github.com/luprime/nlw-setup?tab=readme-ov-file" target="_blank" class="btn btn-github">
+                        <img src="assets/icons/github.svg" alt="">
+                        GitHub
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+     </section>
+
+     <section id="contato">
+        <h2>Contato</h2>
+        <p>Me mande um email: <a href="mailto:lucas.primati@hotmail.com">lucas.primati@hotmail.com</a></p>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/lupri_me/" target="_blank">
+                <img src="assets/icons/instagram.svg" alt="Instagram" class="icon">
+            </a>
+
+            <a href="https://github.com/luprime">
+                <img src="assets/icons/github.svg" alt="github icon" class="icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/lucas-primati/">
+                <img src="assets/icons/linkedin.svg" alt="linkedin logo" class="icon">
+            </a>
         </div>
      </section>
 </body>
